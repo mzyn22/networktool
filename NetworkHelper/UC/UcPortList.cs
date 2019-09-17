@@ -20,7 +20,7 @@ namespace NetworkHelper.UC
 
         private void UcPortList_Load(object sender, EventArgs e)
         {
-
+            this.comboBox1.DataSource = new List<string>() { "TCP", "UDP" };
         }
 
         private void ReadNetstatInfo()
