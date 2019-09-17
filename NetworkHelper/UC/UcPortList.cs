@@ -45,7 +45,7 @@ namespace NetworkHelper.UC
                 if (SocketPortInfo.TryParse(li, out spi))
                 {
                     Console.WriteLine(spi.LocalAddress);
-                    Process ps = Process.GetProcessById(int.Parse(spi.PID));
+                    Process ps = Process.GetProcessById(spi.PID);
                     spi.ProcessName = ps.ProcessName;
                     port_list.Add(spi);
                 }

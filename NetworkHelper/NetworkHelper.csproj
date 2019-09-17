@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\LocalIPHelper.cs" />
+    <Compile Include="Common\SystemInfo.cs" />
     <Compile Include="Common\UIHelper.cs" />
     <Compile Include="Entities\SocketPortInfo.cs" />
     <Compile Include="Form1.cs">
@@ -72,11 +73,23 @@
     <Compile Include="UC\UcPortList.Designer.cs">
       <DependentUpon>UcPortList.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UcProcessInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UcProcessInfo.Designer.cs">
+      <DependentUpon>UcProcessInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UcSystemInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC\UcSystemInfo.Designer.cs">
       <DependentUpon>UcSystemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcTools.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UcTools.Designer.cs">
+      <DependentUpon>UcTools.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -96,8 +109,14 @@
     <EmbeddedResource Include="UC\UcPortList.resx">
       <DependentUpon>UcPortList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\UcProcessInfo.resx">
+      <DependentUpon>UcProcessInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UcSystemInfo.resx">
       <DependentUpon>UcSystemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UcTools.resx">
+      <DependentUpon>UcTools.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
