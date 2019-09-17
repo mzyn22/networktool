@@ -38,7 +38,7 @@ namespace NetworkHelper.UC
 
         private void buttonTaskManager_Click(object sender, EventArgs e)
         {
-            ExecuteCommand("task.exe");
+            ExecuteCommand("taskmgr.exe");
         }
 
         private void buttonDisk_Click(object sender, EventArgs e)
@@ -54,18 +54,27 @@ namespace NetworkHelper.UC
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            ExecuteCommand("register.exe");
+            ExecuteCommand("regedit.exe");
         }
 
         private void buttonManagement_Click(object sender, EventArgs e)
         {
-            ExecuteCommand("register.exe");
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.SystemX86);
+            string cmd = "compmgmt.msc";
+            ExecuteCommand(cmd, "/s", path);
         }
 
         private void buttonSystemInfo_Click(object sender, EventArgs e)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.SystemX86);
-            ExecuteCommand("msinfo32.exe", path, path);
+            ExecuteCommand("msinfo32.exe", null, path);
+        }
+
+        private void buttonSysConfig_Click(object sender, EventArgs e)
+        {
+            string cmd = "msconfig.exe";
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.SystemX86);
+            ExecuteCommand(cmd, "/s", path);
         }
     }
 }

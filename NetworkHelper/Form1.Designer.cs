@@ -58,10 +58,9 @@
             // 
             // buttonRefreshDNSCache
             // 
-            this.buttonRefreshDNSCache.Location = new System.Drawing.Point(17, 92);
-            this.buttonRefreshDNSCache.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRefreshDNSCache.Location = new System.Drawing.Point(13, 74);
             this.buttonRefreshDNSCache.Name = "buttonRefreshDNSCache";
-            this.buttonRefreshDNSCache.Size = new System.Drawing.Size(119, 29);
+            this.buttonRefreshDNSCache.Size = new System.Drawing.Size(89, 23);
             this.buttonRefreshDNSCache.TabIndex = 10;
             this.buttonRefreshDNSCache.Text = "刷新DNS缓存";
             this.buttonRefreshDNSCache.UseVisualStyleBackColor = true;
@@ -69,10 +68,9 @@
             // 
             // buttonQueryPortUse
             // 
-            this.buttonQueryPortUse.Location = new System.Drawing.Point(140, 70);
-            this.buttonQueryPortUse.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonQueryPortUse.Location = new System.Drawing.Point(105, 56);
             this.buttonQueryPortUse.Name = "buttonQueryPortUse";
-            this.buttonQueryPortUse.Size = new System.Drawing.Size(121, 29);
+            this.buttonQueryPortUse.Size = new System.Drawing.Size(91, 23);
             this.buttonQueryPortUse.TabIndex = 11;
             this.buttonQueryPortUse.Text = "查看端口占用";
             this.buttonQueryPortUse.UseVisualStyleBackColor = true;
@@ -80,30 +78,27 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(143, 41);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(107, 33);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 29);
+            this.button2.Size = new System.Drawing.Size(92, 23);
             this.button2.TabIndex = 12;
             this.button2.Text = "查看服务状态";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(747, 4);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(560, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 29);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 13;
             this.button3.Text = "查看进程";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(17, 19);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(13, 15);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 29);
+            this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 15;
             this.button5.Text = "打开记事本";
             this.button5.UseVisualStyleBackColor = true;
@@ -111,47 +106,46 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(17, 55);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(13, 44);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 29);
+            this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 16;
             this.button6.Text = "打开注册表";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(197, 26);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Location = new System.Drawing.Point(148, 21);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 29);
+            this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 17;
             this.button7.Text = "环境变量";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1105, 566);
+            this.tabControl1.Size = new System.Drawing.Size(829, 453);
             this.tabControl1.TabIndex = 18;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.ucIpConfig1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1097, 537);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(821, 427);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "IP地址";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -160,11 +154,10 @@
             // 
             this.tabPage2.Controls.Add(this.ucPortList1);
             this.tabPage2.Controls.Add(this.buttonQueryPortUse);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1097, 537);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(821, 427);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "端口占用";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -173,10 +166,9 @@
             // 
             this.tabPage3.Controls.Add(this.ucSystemInfo1);
             this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1097, 537);
+            this.tabPage3.Size = new System.Drawing.Size(821, 427);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "系统信息";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -187,10 +179,9 @@
             this.tabPage4.Controls.Add(this.buttonRefreshDNSCache);
             this.tabPage4.Controls.Add(this.button5);
             this.tabPage4.Controls.Add(this.button6);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1097, 537);
+            this.tabPage4.Size = new System.Drawing.Size(821, 427);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "工具";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -198,10 +189,9 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1097, 537);
+            this.tabPage5.Size = new System.Drawing.Size(821, 427);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "服务";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -210,58 +200,61 @@
             // 
             this.tabPage6.Controls.Add(this.ucProcessInfo1);
             this.tabPage6.Controls.Add(this.button3);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1097, 537);
+            this.tabPage6.Size = new System.Drawing.Size(821, 427);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "进程";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // ucIpConfig1
             // 
-            this.ucIpConfig1.Location = new System.Drawing.Point(8, 8);
-            this.ucIpConfig1.Margin = new System.Windows.Forms.Padding(5);
+            this.ucIpConfig1.Location = new System.Drawing.Point(6, 6);
+            this.ucIpConfig1.Margin = new System.Windows.Forms.Padding(4);
             this.ucIpConfig1.Name = "ucIpConfig1";
-            this.ucIpConfig1.Size = new System.Drawing.Size(515, 462);
+            this.ucIpConfig1.Size = new System.Drawing.Size(386, 370);
             this.ucIpConfig1.TabIndex = 0;
             // 
             // ucPortList1
             // 
-            this.ucPortList1.Location = new System.Drawing.Point(8, 8);
-            this.ucPortList1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucPortList1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucPortList1.Location = new System.Drawing.Point(6, 6);
             this.ucPortList1.Name = "ucPortList1";
-            this.ucPortList1.Size = new System.Drawing.Size(1081, 521);
+            this.ucPortList1.Size = new System.Drawing.Size(811, 415);
             this.ucPortList1.TabIndex = 12;
             // 
             // ucSystemInfo1
             // 
-            this.ucSystemInfo1.Location = new System.Drawing.Point(304, 26);
+            this.ucSystemInfo1.Location = new System.Drawing.Point(228, 21);
+            this.ucSystemInfo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucSystemInfo1.Name = "ucSystemInfo1";
-            this.ucSystemInfo1.Size = new System.Drawing.Size(600, 491);
+            this.ucSystemInfo1.Size = new System.Drawing.Size(450, 393);
             this.ucSystemInfo1.TabIndex = 18;
             // 
             // ucTools1
             // 
-            this.ucTools1.Location = new System.Drawing.Point(3, 3);
+            this.ucTools1.Location = new System.Drawing.Point(2, 2);
+            this.ucTools1.Margin = new System.Windows.Forms.Padding(2);
             this.ucTools1.Name = "ucTools1";
-            this.ucTools1.Size = new System.Drawing.Size(588, 468);
+            this.ucTools1.Size = new System.Drawing.Size(441, 374);
             this.ucTools1.TabIndex = 17;
             // 
             // ucProcessInfo1
             // 
-            this.ucProcessInfo1.Location = new System.Drawing.Point(3, 4);
+            this.ucProcessInfo1.Location = new System.Drawing.Point(2, 3);
+            this.ucProcessInfo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucProcessInfo1.Name = "ucProcessInfo1";
-            this.ucProcessInfo1.Size = new System.Drawing.Size(629, 530);
+            this.ucProcessInfo1.Size = new System.Drawing.Size(472, 424);
             this.ucProcessInfo1.TabIndex = 14;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1137, 596);
+            this.ClientSize = new System.Drawing.Size(853, 477);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "网络辅助程序      QQ：178323367";
             this.Load += new System.EventHandler(this.Form1_Load);

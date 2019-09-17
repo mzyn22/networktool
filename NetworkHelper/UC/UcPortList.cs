@@ -55,7 +55,7 @@ namespace NetworkHelper.UC
 
             this.dataGridView1.DataSource = port_list;
 
-            MessageBox.Show(result);
+            //MessageBox.Show(result);
         }
 
         private void button1_Click(object sender, EventArgs e)
