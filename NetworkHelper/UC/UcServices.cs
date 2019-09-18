@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace NetworkHelper.UC
 {
-    public partial class UcProcessInfo : UserControl
+    public partial class UcServices : UserControl
     {
-        public UcProcessInfo()
+        public UcServices()
         {
             InitializeComponent();
-        }
-
-        private void UcProcessInfo_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

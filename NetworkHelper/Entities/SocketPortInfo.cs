@@ -24,6 +24,8 @@ namespace NetworkHelper.Entities
 
         public int Port { get; set; }
 
+        public string FileName { get; set; }
+
         public static bool TryParse(string portstr, out SocketPortInfo socketPortInfo)
         {
             if (string.IsNullOrWhiteSpace(portstr))
