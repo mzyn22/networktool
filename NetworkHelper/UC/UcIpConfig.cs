@@ -43,15 +43,30 @@ namespace NetworkHelper.UC
             RefreshThread.IsBackground = true;
             RefreshThread.Start();
 
-            var niList = Common.LocalIPHelper.GetNetworkInterfaces();
+            //var niList = Common.LocalIPHelper.GetNetworkInterfaces();
+            NetworkInterface[] adapters = NetworkInterface.GetAllNetworkInterfaces();
+            IList<KeyValuePair<string, string>> list = new List<KeyValuePair<string, string>>();
+            string id = string.Empty;
+            foreach (NetworkInterface adapter in adapters)
+            {
+                if (adapter.OperationalStatus == OperationalStatus.Down) continue;
+                if (adapter.OperationalStatus == OperationalStatus.Up)
+                {
+                    list.Add(new KeyValuePair<string, string>(adapter.Id, adapter.Name));
+                    if (adapter.GetIPProperties().GatewayAddresses.Count > 0)
+                    {
+                        id = adapter.Id;
+                    }
+                }
+            }
 
             this.comboBoxNetworkInterface.SaveInvoke(() =>
             {
-                this.comboBoxNetworkInterface.DataSource = niList.ToList();
+                this.comboBoxNetworkInterface.DataSource = list;
                 this.comboBoxNetworkInterface.ValueMember = "Key";
                 this.comboBoxNetworkInterface.DisplayMember = "Value";
             });
-
+            comboBoxNetworkInterface.SelectedValue = id;
         }
 
         /// <summary>
@@ -127,6 +142,7 @@ namespace NetworkHelper.UC
                         }
                         this.textBoxDNS1.Text = dns1 ?? "";
                         this.textBoxDNS2.Text = dns2 ?? "";
+                        break;
                     }
                 }
             }

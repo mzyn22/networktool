@@ -51,6 +51,7 @@
     <Compile Include="Common\LocalIPHelper.cs" />
     <Compile Include="Common\SystemInfo.cs" />
     <Compile Include="Common\UIHelper.cs" />
+    <Compile Include="Entities\IP.cs" />
     <Compile Include="Entities\SocketPortInfo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,6 +67,12 @@
     </Compile>
     <Compile Include="UC\UcIpConfig.Designer.cs">
       <DependentUpon>UcIpConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcOnlineDevice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UcOnlineDevice.Designer.cs">
+      <DependentUpon>UcOnlineDevice.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UcPortList.cs">
       <SubType>UserControl</SubType>
@@ -105,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="UC\UcIpConfig.resx">
       <DependentUpon>UcIpConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UcOnlineDevice.resx">
+      <DependentUpon>UcOnlineDevice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UcPortList.resx">
       <DependentUpon>UcPortList.cs</DependentUpon>
