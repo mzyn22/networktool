@@ -68,5 +68,10 @@ namespace NetworkHelper.UC
             }
             return processInfos;
         }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            ThreadPool.QueueUserWorkItem(new WaitCallback(RefreshProcessInfo), new object());
+        }
     }
 }

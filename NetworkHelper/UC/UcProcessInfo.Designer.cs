@@ -39,6 +39,7 @@
             this.column_StartTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_WorkingSet64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.column_TotelProcessorTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,10 +130,22 @@
             this.column_TotelProcessorTime.HeaderText = "总CPU时间";
             this.column_TotelProcessorTime.Name = "column_TotelProcessorTime";
             // 
+            // buttonRefresh
+            // 
+            this.buttonRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRefresh.Location = new System.Drawing.Point(361, 9);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(75, 23);
+            this.buttonRefresh.TabIndex = 1;
+            this.buttonRefresh.Text = "刷新";
+            this.buttonRefresh.UseVisualStyleBackColor = true;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
+            // 
             // UcProcessInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UcProcessInfo";
@@ -156,5 +169,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn column_StartTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_WorkingSet64;
         private System.Windows.Forms.DataGridViewTextBoxColumn column_TotelProcessorTime;
+        private System.Windows.Forms.Button buttonRefresh;
     }
 }
