@@ -48,7 +48,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(2, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(436, 370);
@@ -65,9 +65,9 @@
             this.tabPage1.Controls.Add(this.buttonExplorer);
             this.tabPage1.Controls.Add(this.buttonCmd);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(428, 344);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "桌面工具";
@@ -75,10 +75,10 @@
             // 
             // buttonSystemInfo
             // 
-            this.buttonSystemInfo.Location = new System.Drawing.Point(5, 170);
-            this.buttonSystemInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSystemInfo.Location = new System.Drawing.Point(5, 180);
+            this.buttonSystemInfo.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSystemInfo.Name = "buttonSystemInfo";
-            this.buttonSystemInfo.Size = new System.Drawing.Size(73, 18);
+            this.buttonSystemInfo.Size = new System.Drawing.Size(73, 25);
             this.buttonSystemInfo.TabIndex = 7;
             this.buttonSystemInfo.Text = "系统信息";
             this.buttonSystemInfo.UseVisualStyleBackColor = true;
@@ -86,10 +86,10 @@
             // 
             // buttonManagement
             // 
-            this.buttonManagement.Location = new System.Drawing.Point(5, 147);
-            this.buttonManagement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonManagement.Location = new System.Drawing.Point(5, 155);
+            this.buttonManagement.Margin = new System.Windows.Forms.Padding(2);
             this.buttonManagement.Name = "buttonManagement";
-            this.buttonManagement.Size = new System.Drawing.Size(73, 18);
+            this.buttonManagement.Size = new System.Drawing.Size(73, 25);
             this.buttonManagement.TabIndex = 6;
             this.buttonManagement.Text = "计算机管理";
             this.buttonManagement.UseVisualStyleBackColor = true;
@@ -97,10 +97,10 @@
             // 
             // buttonRegister
             // 
-            this.buttonRegister.Location = new System.Drawing.Point(5, 124);
-            this.buttonRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRegister.Location = new System.Drawing.Point(5, 130);
+            this.buttonRegister.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(73, 18);
+            this.buttonRegister.Size = new System.Drawing.Size(73, 25);
             this.buttonRegister.TabIndex = 5;
             this.buttonRegister.Text = "注册表";
             this.buttonRegister.UseVisualStyleBackColor = true;
@@ -108,10 +108,10 @@
             // 
             // buttonEvent
             // 
-            this.buttonEvent.Location = new System.Drawing.Point(5, 100);
-            this.buttonEvent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEvent.Location = new System.Drawing.Point(5, 105);
+            this.buttonEvent.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEvent.Name = "buttonEvent";
-            this.buttonEvent.Size = new System.Drawing.Size(73, 18);
+            this.buttonEvent.Size = new System.Drawing.Size(73, 25);
             this.buttonEvent.TabIndex = 4;
             this.buttonEvent.Text = "事件查看器";
             this.buttonEvent.UseVisualStyleBackColor = true;
@@ -119,10 +119,10 @@
             // 
             // buttonSysConfig
             // 
-            this.buttonSysConfig.Location = new System.Drawing.Point(5, 76);
-            this.buttonSysConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSysConfig.Location = new System.Drawing.Point(5, 80);
+            this.buttonSysConfig.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSysConfig.Name = "buttonSysConfig";
-            this.buttonSysConfig.Size = new System.Drawing.Size(73, 18);
+            this.buttonSysConfig.Size = new System.Drawing.Size(73, 25);
             this.buttonSysConfig.TabIndex = 3;
             this.buttonSysConfig.Text = "系统配置";
             this.buttonSysConfig.UseVisualStyleBackColor = true;
@@ -130,10 +130,10 @@
             // 
             // buttonTaskManager
             // 
-            this.buttonTaskManager.Location = new System.Drawing.Point(5, 52);
-            this.buttonTaskManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonTaskManager.Location = new System.Drawing.Point(5, 55);
+            this.buttonTaskManager.Margin = new System.Windows.Forms.Padding(2);
             this.buttonTaskManager.Name = "buttonTaskManager";
-            this.buttonTaskManager.Size = new System.Drawing.Size(73, 18);
+            this.buttonTaskManager.Size = new System.Drawing.Size(73, 25);
             this.buttonTaskManager.TabIndex = 2;
             this.buttonTaskManager.Text = "任务管理器";
             this.buttonTaskManager.UseVisualStyleBackColor = true;
@@ -141,10 +141,10 @@
             // 
             // buttonExplorer
             // 
-            this.buttonExplorer.Location = new System.Drawing.Point(4, 28);
-            this.buttonExplorer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExplorer.Location = new System.Drawing.Point(4, 30);
+            this.buttonExplorer.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExplorer.Name = "buttonExplorer";
-            this.buttonExplorer.Size = new System.Drawing.Size(74, 18);
+            this.buttonExplorer.Size = new System.Drawing.Size(73, 25);
             this.buttonExplorer.TabIndex = 1;
             this.buttonExplorer.Text = "资源管理器";
             this.buttonExplorer.UseVisualStyleBackColor = true;
@@ -153,9 +153,9 @@
             // buttonCmd
             // 
             this.buttonCmd.Location = new System.Drawing.Point(4, 5);
-            this.buttonCmd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCmd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCmd.Name = "buttonCmd";
-            this.buttonCmd.Size = new System.Drawing.Size(74, 18);
+            this.buttonCmd.Size = new System.Drawing.Size(73, 25);
             this.buttonCmd.TabIndex = 0;
             this.buttonCmd.Text = "命令行";
             this.buttonCmd.UseVisualStyleBackColor = true;
@@ -164,9 +164,9 @@
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(428, 344);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "网络工具";
@@ -177,7 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UcTools";
             this.Size = new System.Drawing.Size(441, 374);
             this.tabControl1.ResumeLayout(false);

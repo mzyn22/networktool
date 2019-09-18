@@ -86,7 +86,11 @@ namespace NetworkHelper.UC
                         {
                             Process ps = Process.GetProcessById(spi.PID);
                             spi.ProcessName = ps.ProcessName;
-                            spi.FileName = ps.MainModule.FileName;
+                            try
+                            {
+                                spi.FileName = ps.MainModule.FileName;
+                            }
+                            catch { }
                             port_list.Add(spi);
                         }
                     }

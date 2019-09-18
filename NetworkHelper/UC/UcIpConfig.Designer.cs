@@ -95,10 +95,10 @@
             // 
             // textBoxInternetIpAddress
             // 
-            this.textBoxInternetIpAddress.Enabled = false;
             this.textBoxInternetIpAddress.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBoxInternetIpAddress.Location = new System.Drawing.Point(157, 15);
             this.textBoxInternetIpAddress.Name = "textBoxInternetIpAddress";
+            this.textBoxInternetIpAddress.ReadOnly = true;
             this.textBoxInternetIpAddress.Size = new System.Drawing.Size(156, 26);
             this.textBoxInternetIpAddress.TabIndex = 18;
             // 

@@ -52,6 +52,7 @@
     <Compile Include="Common\SystemInfo.cs" />
     <Compile Include="Common\UIHelper.cs" />
     <Compile Include="Entities\IP.cs" />
+    <Compile Include="Entities\ProcessInfo.cs" />
     <Compile Include="Entities\SocketPortInfo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
