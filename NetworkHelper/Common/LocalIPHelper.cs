@@ -219,6 +219,28 @@ namespace NetworkHelper.Common
             }
         }
 
+        internal static bool IsIPv4(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                return false;
+            }
+            string patten = @"^(?=(\b|\D))(((\d{1,2})|(1\d{1,2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{1,2})|(2[0-4]\d)|(25[0-5]))(?=(\b|\D))$";
+            Match match = Regex.Match(input, patten);
+            return match.Success;
+        }
+
+        internal static bool IsMac(string input)
+        {
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                return false;
+            }
+            string patten = @"^((([a-f0-9]{2}:){5})|(([a-f0-9]{2}-){5}))[a-f0-9]{2}$";
+            Match match = Regex.Match(input, patten, RegexOptions.IgnoreCase);
+            return match.Success;
+        }
+
     }
 
 }
