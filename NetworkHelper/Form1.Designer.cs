@@ -34,27 +34,28 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.ucOnlineDevice1 = new NetworkHelper.UC.UcOnlineDevice();
+            this.tabPageIpInfo = new System.Windows.Forms.TabPage();
+            this.tabPageEndPoint = new System.Windows.Forms.TabPage();
+            this.tabPageSystemInfo = new System.Windows.Forms.TabPage();
+            this.tabPageTools = new System.Windows.Forms.TabPage();
+            this.tabPageServices = new System.Windows.Forms.TabPage();
+            this.tabPageProcess = new System.Windows.Forms.TabPage();
             this.ucIpConfig1 = new NetworkHelper.UC.UcIpConfig();
             this.ucPortList1 = new NetworkHelper.UC.UcPortList();
             this.ucSystemInfo1 = new NetworkHelper.UC.UcSystemInfo();
             this.ucTools1 = new NetworkHelper.UC.UcTools();
             this.ucProcessInfo1 = new NetworkHelper.UC.UcProcessInfo();
+            this.tabPageInnerNetWork = new System.Windows.Forms.TabPage();
+            this.ucOnlineDevice1 = new NetworkHelper.UC.UcOnlineDevice();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.tabPageIpInfo.SuspendLayout();
+            this.tabPageEndPoint.SuspendLayout();
+            this.tabPageSystemInfo.SuspendLayout();
+            this.tabPageTools.SuspendLayout();
+            this.tabPageServices.SuspendLayout();
+            this.tabPageProcess.SuspendLayout();
+            this.tabPageInnerNetWork.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonRefreshDNSCache
@@ -114,115 +115,99 @@
             this.button6.Text = "打开注册表";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(148, 21);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "环境变量";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPageIpInfo);
+            this.tabControl1.Controls.Add(this.tabPageEndPoint);
+            this.tabControl1.Controls.Add(this.tabPageInnerNetWork);
+            this.tabControl1.Controls.Add(this.tabPageProcess);
+            this.tabControl1.Controls.Add(this.tabPageSystemInfo);
+            this.tabControl1.Controls.Add(this.tabPageTools);
+            this.tabControl1.Controls.Add(this.tabPageServices);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(829, 453);
             this.tabControl1.TabIndex = 18;
             // 
-            // tabPage1
+            // tabPageIpInfo
             // 
-            this.tabPage1.Controls.Add(this.ucOnlineDevice1);
-            this.tabPage1.Controls.Add(this.ucIpConfig1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(821, 427);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "IP地址";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageIpInfo.Controls.Add(this.ucIpConfig1);
+            this.tabPageIpInfo.Location = new System.Drawing.Point(4, 22);
+            this.tabPageIpInfo.Name = "tabPageIpInfo";
+            this.tabPageIpInfo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageIpInfo.Size = new System.Drawing.Size(821, 427);
+            this.tabPageIpInfo.TabIndex = 0;
+            this.tabPageIpInfo.Text = "IP地址";
+            this.tabPageIpInfo.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageEndPoint
             // 
-            this.tabPage2.Controls.Add(this.ucPortList1);
-            this.tabPage2.Controls.Add(this.buttonQueryPortUse);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(821, 427);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "端口占用";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageEndPoint.Controls.Add(this.ucPortList1);
+            this.tabPageEndPoint.Controls.Add(this.buttonQueryPortUse);
+            this.tabPageEndPoint.Location = new System.Drawing.Point(4, 22);
+            this.tabPageEndPoint.Name = "tabPageEndPoint";
+            this.tabPageEndPoint.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageEndPoint.Size = new System.Drawing.Size(821, 427);
+            this.tabPageEndPoint.TabIndex = 1;
+            this.tabPageEndPoint.Text = "端口占用";
+            this.tabPageEndPoint.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tabPageSystemInfo
             // 
-            this.tabPage3.Controls.Add(this.ucSystemInfo1);
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(821, 427);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "系统信息";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPageSystemInfo.Controls.Add(this.ucSystemInfo1);
+            this.tabPageSystemInfo.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSystemInfo.Name = "tabPageSystemInfo";
+            this.tabPageSystemInfo.Size = new System.Drawing.Size(821, 427);
+            this.tabPageSystemInfo.TabIndex = 2;
+            this.tabPageSystemInfo.Text = "系统信息";
+            this.tabPageSystemInfo.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // tabPageTools
             // 
-            this.tabPage4.Controls.Add(this.ucTools1);
-            this.tabPage4.Controls.Add(this.buttonRefreshDNSCache);
-            this.tabPage4.Controls.Add(this.button5);
-            this.tabPage4.Controls.Add(this.button6);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(821, 427);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "工具";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPageTools.Controls.Add(this.ucTools1);
+            this.tabPageTools.Controls.Add(this.buttonRefreshDNSCache);
+            this.tabPageTools.Controls.Add(this.button5);
+            this.tabPageTools.Controls.Add(this.button6);
+            this.tabPageTools.Location = new System.Drawing.Point(4, 22);
+            this.tabPageTools.Name = "tabPageTools";
+            this.tabPageTools.Size = new System.Drawing.Size(821, 427);
+            this.tabPageTools.TabIndex = 3;
+            this.tabPageTools.Text = "工具";
+            this.tabPageTools.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // tabPageServices
             // 
-            this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(821, 427);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "服务";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.tabPageServices.Controls.Add(this.button2);
+            this.tabPageServices.Location = new System.Drawing.Point(4, 22);
+            this.tabPageServices.Name = "tabPageServices";
+            this.tabPageServices.Size = new System.Drawing.Size(821, 427);
+            this.tabPageServices.TabIndex = 4;
+            this.tabPageServices.Text = "服务";
+            this.tabPageServices.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
+            // tabPageProcess
             // 
-            this.tabPage6.Controls.Add(this.ucProcessInfo1);
-            this.tabPage6.Controls.Add(this.button3);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(821, 427);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "进程";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // ucOnlineDevice1
-            // 
-            this.ucOnlineDevice1.Location = new System.Drawing.Point(394, 27);
-            this.ucOnlineDevice1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucOnlineDevice1.Name = "ucOnlineDevice1";
-            this.ucOnlineDevice1.Size = new System.Drawing.Size(341, 324);
-            this.ucOnlineDevice1.TabIndex = 1;
+            this.tabPageProcess.Controls.Add(this.ucProcessInfo1);
+            this.tabPageProcess.Controls.Add(this.button3);
+            this.tabPageProcess.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProcess.Name = "tabPageProcess";
+            this.tabPageProcess.Size = new System.Drawing.Size(821, 427);
+            this.tabPageProcess.TabIndex = 5;
+            this.tabPageProcess.Text = "进程";
+            this.tabPageProcess.UseVisualStyleBackColor = true;
             // 
             // ucIpConfig1
             // 
+            this.ucIpConfig1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.ucIpConfig1.Location = new System.Drawing.Point(6, 6);
             this.ucIpConfig1.Margin = new System.Windows.Forms.Padding(4);
             this.ucIpConfig1.Name = "ucIpConfig1";
-            this.ucIpConfig1.Size = new System.Drawing.Size(386, 370);
+            this.ucIpConfig1.Size = new System.Drawing.Size(386, 414);
             this.ucIpConfig1.TabIndex = 0;
             // 
             // ucPortList1
@@ -238,10 +223,13 @@
             // 
             // ucSystemInfo1
             // 
-            this.ucSystemInfo1.Location = new System.Drawing.Point(228, 21);
+            this.ucSystemInfo1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucSystemInfo1.Location = new System.Drawing.Point(2, 2);
             this.ucSystemInfo1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucSystemInfo1.Name = "ucSystemInfo1";
-            this.ucSystemInfo1.Size = new System.Drawing.Size(450, 393);
+            this.ucSystemInfo1.Size = new System.Drawing.Size(817, 423);
             this.ucSystemInfo1.TabIndex = 18;
             // 
             // ucTools1
@@ -263,6 +251,28 @@
             this.ucProcessInfo1.Size = new System.Drawing.Size(817, 424);
             this.ucProcessInfo1.TabIndex = 14;
             // 
+            // tabPageInnerNetWork
+            // 
+            this.tabPageInnerNetWork.Controls.Add(this.ucOnlineDevice1);
+            this.tabPageInnerNetWork.Location = new System.Drawing.Point(4, 22);
+            this.tabPageInnerNetWork.Name = "tabPageInnerNetWork";
+            this.tabPageInnerNetWork.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageInnerNetWork.Size = new System.Drawing.Size(821, 427);
+            this.tabPageInnerNetWork.TabIndex = 6;
+            this.tabPageInnerNetWork.Text = "局域网";
+            this.tabPageInnerNetWork.UseVisualStyleBackColor = true;
+            // 
+            // ucOnlineDevice1
+            // 
+            this.ucOnlineDevice1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucOnlineDevice1.Location = new System.Drawing.Point(5, 5);
+            this.ucOnlineDevice1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucOnlineDevice1.Name = "ucOnlineDevice1";
+            this.ucOnlineDevice1.Size = new System.Drawing.Size(811, 417);
+            this.ucOnlineDevice1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -273,12 +283,13 @@
             this.Text = "网络辅助程序      QQ：178323367";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
+            this.tabPageIpInfo.ResumeLayout(false);
+            this.tabPageEndPoint.ResumeLayout(false);
+            this.tabPageSystemInfo.ResumeLayout(false);
+            this.tabPageTools.ResumeLayout(false);
+            this.tabPageServices.ResumeLayout(false);
+            this.tabPageProcess.ResumeLayout(false);
+            this.tabPageInnerNetWork.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,19 +301,19 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPageIpInfo;
+        private System.Windows.Forms.TabPage tabPageEndPoint;
+        private System.Windows.Forms.TabPage tabPageSystemInfo;
+        private System.Windows.Forms.TabPage tabPageTools;
+        private System.Windows.Forms.TabPage tabPageServices;
+        private System.Windows.Forms.TabPage tabPageProcess;
         private UC.UcIpConfig ucIpConfig1;
         private UC.UcPortList ucPortList1;
         private UC.UcSystemInfo ucSystemInfo1;
         private UC.UcProcessInfo ucProcessInfo1;
         private UC.UcTools ucTools1;
+        private System.Windows.Forms.TabPage tabPageInnerNetWork;
         private UC.UcOnlineDevice ucOnlineDevice1;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Net;
 
 namespace NetworkHelper.UC
 {
@@ -38,6 +39,36 @@ namespace NetworkHelper.UC
             char[] split_chars = new char[] { '\r', '\n' };
             char[] ch_split_chars = new char[] { ' ' };
             string[] lines = result.Split(split_chars, StringSplitOptions.RemoveEmptyEntries);
+            IList<Entities.IPMacPair> list = new List<Entities.IPMacPair>();
+            foreach (var str in lines)
+            {
+                Entities.IPMacPair pair = null;
+                if (Entities.IPMacPair.TryParse(str, out pair))
+                {
+                    IPAddress iPAddress = IPAddress.Parse(pair.IP);
+                    if (IPAddress.IsLoopback(iPAddress))
+                    {
+                        continue;
+                    }
+                    if (pair.IP.StartsWith("10.") && !pair.IP.EndsWith(".255") || pair.IP.StartsWith("192.168.") && !pair.IP.EndsWith(".255"))
+                    {
+                        bool exists = false;
+                        foreach (var a in list)
+                        {
+                            if (a.IP == pair.IP && a.Mac == pair.Mac)
+                            {
+                                exists = true;
+                            }
+                        }
+                        if (!exists)
+                        {
+                            list.Add(pair);
+                        }
+                    }
+                }
+            }
+
+            this.dataGridView1.DataSource = list;
 
 
         }

@@ -82,6 +82,7 @@
             this.button4.TabIndex = 30;
             this.button4.Text = "Ping指定IP";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             // 
             // label1
             // 
@@ -168,6 +169,7 @@
             this.button1.TabIndex = 29;
             this.button1.Text = "设置";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             // 
             // textBoxGateway
             // 

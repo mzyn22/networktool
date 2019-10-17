@@ -76,5 +76,48 @@ namespace NetworkHelper.UC
             string path = Environment.GetFolderPath(Environment.SpecialFolder.SystemX86);
             ExecuteCommand(cmd, "/s", path);
         }
+
+        private void buttonDevice_Click(object sender, EventArgs e)
+        {
+            string cmd = "devmgmt.msc";
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.SystemX86);
+            ExecuteCommand(cmd);
+        }
+
+        private void buttonProgram_Click(object sender, EventArgs e)
+        {
+            string cmd = "appwiz.cpl";
+            ExecuteCommand(cmd);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string cmd = "mstsc";
+            ExecuteCommand(cmd);
+        }
+
+        private void buttonControl_Click(object sender, EventArgs e)
+        {
+            string cmd = "control";
+            ExecuteCommand(cmd);
+        }
+
+        private void buttonDisk_Click_1(object sender, EventArgs e)
+        {
+            string cmd = "diskmgmt.msc";
+            ExecuteCommand(cmd);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string cmd = "gpedit.msc";
+            ExecuteCommand(cmd);
+        }
+
+        private void buttonRecorder_Click(object sender, EventArgs e)
+        {
+            string cmd = "sndrec32";
+            ExecuteCommand(cmd);
+        }
     }
 }
