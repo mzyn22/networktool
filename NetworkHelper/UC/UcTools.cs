@@ -119,5 +119,11 @@ namespace NetworkHelper.UC
             string cmd = "sndrec32";
             ExecuteCommand(cmd);
         }
+
+        private void buttonCalc_Click(object sender, EventArgs e)
+        {
+            string cmd = "calc.exe";
+            ExecuteCommand(cmd);
+        }
     }
 }

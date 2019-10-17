@@ -30,6 +30,13 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.buttonRecorder = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.buttonDisk = new System.Windows.Forms.Button();
+            this.buttonControl = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonProgram = new System.Windows.Forms.Button();
+            this.buttonDevice = new System.Windows.Forms.Button();
             this.buttonSystemInfo = new System.Windows.Forms.Button();
             this.buttonManagement = new System.Windows.Forms.Button();
             this.buttonRegister = new System.Windows.Forms.Button();
@@ -39,13 +46,7 @@
             this.buttonExplorer = new System.Windows.Forms.Button();
             this.buttonCmd = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.buttonDevice = new System.Windows.Forms.Button();
-            this.buttonProgram = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonControl = new System.Windows.Forms.Button();
-            this.buttonDisk = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.buttonRecorder = new System.Windows.Forms.Button();
+            this.buttonCalc = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.buttonCalc);
             this.tabPage1.Controls.Add(this.buttonRecorder);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.buttonDisk);
@@ -86,6 +88,76 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "桌面工具";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // buttonRecorder
+            // 
+            this.buttonRecorder.Location = new System.Drawing.Point(86, 239);
+            this.buttonRecorder.Name = "buttonRecorder";
+            this.buttonRecorder.Size = new System.Drawing.Size(75, 23);
+            this.buttonRecorder.TabIndex = 14;
+            this.buttonRecorder.Text = "录音机";
+            this.buttonRecorder.UseVisualStyleBackColor = true;
+            this.buttonRecorder.Click += new System.EventHandler(this.buttonRecorder_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(86, 268);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "组策略";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonDisk
+            // 
+            this.buttonDisk.Location = new System.Drawing.Point(86, 297);
+            this.buttonDisk.Name = "buttonDisk";
+            this.buttonDisk.Size = new System.Drawing.Size(75, 23);
+            this.buttonDisk.TabIndex = 12;
+            this.buttonDisk.Text = "磁盘管理";
+            this.buttonDisk.UseVisualStyleBackColor = true;
+            this.buttonDisk.Click += new System.EventHandler(this.buttonDisk_Click_1);
+            // 
+            // buttonControl
+            // 
+            this.buttonControl.Location = new System.Drawing.Point(5, 297);
+            this.buttonControl.Name = "buttonControl";
+            this.buttonControl.Size = new System.Drawing.Size(75, 23);
+            this.buttonControl.TabIndex = 11;
+            this.buttonControl.Text = "控制面板";
+            this.buttonControl.UseVisualStyleBackColor = true;
+            this.buttonControl.Click += new System.EventHandler(this.buttonControl_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(5, 268);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "远程桌面";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // buttonProgram
+            // 
+            this.buttonProgram.Location = new System.Drawing.Point(5, 239);
+            this.buttonProgram.Name = "buttonProgram";
+            this.buttonProgram.Size = new System.Drawing.Size(75, 23);
+            this.buttonProgram.TabIndex = 9;
+            this.buttonProgram.Text = "程序和功能";
+            this.buttonProgram.UseVisualStyleBackColor = true;
+            this.buttonProgram.Click += new System.EventHandler(this.buttonProgram_Click);
+            // 
+            // buttonDevice
+            // 
+            this.buttonDevice.Location = new System.Drawing.Point(5, 210);
+            this.buttonDevice.Name = "buttonDevice";
+            this.buttonDevice.Size = new System.Drawing.Size(75, 23);
+            this.buttonDevice.TabIndex = 8;
+            this.buttonDevice.Text = "设备管理器";
+            this.buttonDevice.UseVisualStyleBackColor = true;
+            this.buttonDevice.Click += new System.EventHandler(this.buttonDevice_Click);
             // 
             // buttonSystemInfo
             // 
@@ -186,75 +258,15 @@
             this.tabPage2.Text = "网络工具";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // buttonDevice
+            // buttonCalc
             // 
-            this.buttonDevice.Location = new System.Drawing.Point(5, 210);
-            this.buttonDevice.Name = "buttonDevice";
-            this.buttonDevice.Size = new System.Drawing.Size(75, 23);
-            this.buttonDevice.TabIndex = 8;
-            this.buttonDevice.Text = "设备管理器";
-            this.buttonDevice.UseVisualStyleBackColor = true;
-            this.buttonDevice.Click += new System.EventHandler(this.buttonDevice_Click);
-            // 
-            // buttonProgram
-            // 
-            this.buttonProgram.Location = new System.Drawing.Point(5, 239);
-            this.buttonProgram.Name = "buttonProgram";
-            this.buttonProgram.Size = new System.Drawing.Size(75, 23);
-            this.buttonProgram.TabIndex = 9;
-            this.buttonProgram.Text = "程序和功能";
-            this.buttonProgram.UseVisualStyleBackColor = true;
-            this.buttonProgram.Click += new System.EventHandler(this.buttonProgram_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(5, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "远程桌面";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // buttonControl
-            // 
-            this.buttonControl.Location = new System.Drawing.Point(5, 297);
-            this.buttonControl.Name = "buttonControl";
-            this.buttonControl.Size = new System.Drawing.Size(75, 23);
-            this.buttonControl.TabIndex = 11;
-            this.buttonControl.Text = "控制面板";
-            this.buttonControl.UseVisualStyleBackColor = true;
-            this.buttonControl.Click += new System.EventHandler(this.buttonControl_Click);
-            // 
-            // buttonDisk
-            // 
-            this.buttonDisk.Location = new System.Drawing.Point(86, 297);
-            this.buttonDisk.Name = "buttonDisk";
-            this.buttonDisk.Size = new System.Drawing.Size(75, 23);
-            this.buttonDisk.TabIndex = 12;
-            this.buttonDisk.Text = "磁盘管理";
-            this.buttonDisk.UseVisualStyleBackColor = true;
-            this.buttonDisk.Click += new System.EventHandler(this.buttonDisk_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(86, 268);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "组策略";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // buttonRecorder
-            // 
-            this.buttonRecorder.Location = new System.Drawing.Point(86, 239);
-            this.buttonRecorder.Name = "buttonRecorder";
-            this.buttonRecorder.Size = new System.Drawing.Size(75, 23);
-            this.buttonRecorder.TabIndex = 14;
-            this.buttonRecorder.Text = "录音机";
-            this.buttonRecorder.UseVisualStyleBackColor = true;
-            this.buttonRecorder.Click += new System.EventHandler(this.buttonRecorder_Click);
+            this.buttonCalc.Location = new System.Drawing.Point(86, 210);
+            this.buttonCalc.Name = "buttonCalc";
+            this.buttonCalc.Size = new System.Drawing.Size(75, 23);
+            this.buttonCalc.TabIndex = 15;
+            this.buttonCalc.Text = "计算器";
+            this.buttonCalc.UseVisualStyleBackColor = true;
+            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
             // 
             // UcTools
             // 
@@ -290,5 +302,6 @@
         private System.Windows.Forms.Button buttonDisk;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonRecorder;
+        private System.Windows.Forms.Button buttonCalc;
     }
 }
