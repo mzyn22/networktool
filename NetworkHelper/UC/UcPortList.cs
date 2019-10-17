@@ -58,7 +58,7 @@ namespace NetworkHelper.UC
             string status = comboBoxStatus.SelectedValue.ToString();
             string iptype = comboBoxIPType.SelectedValue.ToString();
             string protocal = comboBoxProtocol.SelectedValue.ToString();
-
+            string port = comboBoxPort.Text;
             Process process = new Process();
             process.StartInfo = new ProcessStartInfo();
             process.StartInfo.FileName = "netstat";
@@ -82,6 +82,7 @@ namespace NetworkHelper.UC
                     {
                         if ((protocal == spi.Protocal || protocal == "ALL")
                             && (status == "ALL" || status == spi.Status)
+                            && (port == "" || port == spi.Port.ToString())
                             )
                         {
                             Process ps = Process.GetProcessById(spi.PID);
@@ -114,7 +115,7 @@ namespace NetworkHelper.UC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ReadProcessesInfo();
+            //ReadProcessesInfo();
             ReadNetstatInfo();
         }
 
